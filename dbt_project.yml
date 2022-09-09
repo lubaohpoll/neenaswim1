@@ -4,7 +4,7 @@ config-version: 2
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 models:
   shopify:
-    +schema: shopify
+    +schema: shopify_neenaswim
     +materialized: table
     intermediate:
       +materialized: ephemeral
