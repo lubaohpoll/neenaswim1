@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: shopify_neenaswim
+  - name: shopify_neenaswim_shopify_neenaswim
     tables:
       - name: ABANDONED_APPLIED_CHECKOUT
       - name: ABANDONED_CHECKOUT
