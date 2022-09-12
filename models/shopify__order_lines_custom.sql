@@ -25,7 +25,14 @@ with order_lines as (
     group by 1,2
 {% endif %}
 
-), joined as (
+), shopify_orders as (
+
+    select
+        name
+	
+    from {{ var('shopify__order') }}
+	
+,joined as (
 
     select
         order_lines.*,
