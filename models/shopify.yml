@@ -9,7 +9,7 @@ models:
             - order_line_id
             - source_relation
     columns:
-     - name: Name
+      - name: Name
         description: "Name"
       - name: _fivetran_synced
         description: "{{ doc('_fivetran_synced') }}"
