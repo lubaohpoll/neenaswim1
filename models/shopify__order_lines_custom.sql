@@ -25,15 +25,7 @@ with order_lines as (
     group by 1,2
 {% endif %}
 
-), orders as (
-
-     select
-        Name,
-        source_relation
-	
-    from {{ var('shopify__orders') }}
-
-, joined as (
+), joined as (
 
     select
         order_lines.*,
