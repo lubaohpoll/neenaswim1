@@ -44,7 +44,7 @@ with order_lines as (
         order_lines.pre_tax_price  - coalesce(refunds_aggregated.subtotal,0) as subtotal_net_refunds,
         {% endif %}
         
-	shopify__order.name as name,
+	shopify_orders.name as name,
         product_variants.created_timestamp as variant_created_at,
         product_variants.updated_timestamp as variant_updated_at,
         product_variants.inventory_item_id,
