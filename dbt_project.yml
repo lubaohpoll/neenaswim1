@@ -6,4 +6,6 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 vars:
     shopify_union_schemas: ['SHOPIFY_OHPOLLY_UK','SHOPIFY_OHPOLLY_US','SHOPIFY_BOANDTEE','SHOPIFY_NEENASWIM'] # use this if the data is in different schemas/datasets of the same database/project
     shopify_union_databases: ['FIVETRAN_DATABASE'] # use this if the data is in different databases/projects but uses the same schema name
-    order_line_pass_through_columns: ["Name"]
+    order_line_pass_through_columns: [
+        {"name": "Name", "datatype": dbt_utils.type_string(), "alias": "name"}
+    ]
