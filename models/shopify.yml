@@ -1,7 +1,7 @@
 version: 2
 
 models:
-   - name: shopify_order_line_custom
+  - name: shopify_order_line_custom
     description: Each record represents a line item of an order in Shopify.
     tests:
       - dbt_utils.unique_combination_of_columns:
